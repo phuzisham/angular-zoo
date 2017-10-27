@@ -6,6 +6,7 @@ import { Animal } from './animal-model';
   template: `
   <div>
     <h1>Beast Tracker</h1>
+    <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
 
   </div>
   `
