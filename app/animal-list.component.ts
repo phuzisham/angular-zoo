@@ -14,6 +14,7 @@ import { Animal } from './animal-model';
         <li>Age: {{currentAnimal.age}}</li>
         <li>Likes: {{currentAnimal.like}}</li>
         <li>Dislikes: {{currentAnimal.dislike}}</li>
+        <button class="btn btn-primary" (click)="editButtonHasBeenClicked(currentAnimal)">Edit!</button><br>
       </ul>
     </li>
   </ol>
