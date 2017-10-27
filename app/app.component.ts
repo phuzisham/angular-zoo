@@ -5,6 +5,7 @@ import { Animal } from './animal-model';
   selector: 'app-root',
   template: `
   <div>
+    <h1>Beast Tracker</h1>
 
   </div>
   `
@@ -12,7 +13,7 @@ import { Animal } from './animal-model';
 
 export class AppComponent {
   masterAnimalList: Animal[] = [
-    new Animal()
+    new Animal('Puma', 'Vincent', 4, 'Omnivore', 'South Zoo', 3, 'Male', 'Eating', 'Veterinarians')
   ];
 
   selectedAnimal: Animal = null;
