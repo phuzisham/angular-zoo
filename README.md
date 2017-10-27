@@ -1,6 +1,6 @@
-# Doctor Lookup
+# Animal Tracker
 
-#### _Animal Tracking. Last Modified: 10.27.2017_
+#### _Last Modified: 10.27.2017_
 
 #### By _David Hale_
 
