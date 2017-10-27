@@ -31,7 +31,7 @@ __decorate([
 EditAnimalComponent = __decorate([
     core_1.Component({
         selector: 'edit-animal',
-        template: "\n  <div *ngIf=\"childSelectedAnimal\">\n    <h3>{{childSelectedAnimal.name}}</h3>\n    <h3>Edit Animal</h3>\n    <label>Enter Animal Name:</label>\n    <input type=\"text\" [(ngModel)]=\"childSelectedAnimal.name\">\n    <br>\n    <label>Enter Animal Species:</label>\n    <input type=\"text\" [(ngModel)]=\"childSelectedAnimal.species\">\n    <br>\n    <label>Enter Animal Like:</label>\n    <input type=\"text\" [(ngModel)]=\"childSelectedAnimal.like\">\n    <br>\n    <label>Enter Animal Dislike:</label>\n    <input type=\"text\" [(ngModel)]=\"childSelectedAnimal.dislike\">\n    <br>\n    <button (click)=\"doneButtonClicked()\">Done</button>\n  </div>\n  "
+        template: "\n  <div *ngIf=\"childSelectedAnimal\" class=\"well\">\n    <h3>{{childSelectedAnimal.name}}</h3>\n    <h3>Edit Animal</h3>\n    <label>Enter Animal Name:</label>\n    <input type=\"text\" [(ngModel)]=\"childSelectedAnimal.name\">\n    <br>\n    <label>Enter Animal Species:</label>\n    <input type=\"text\" [(ngModel)]=\"childSelectedAnimal.species\">\n    <br>\n    <label>Enter Animal Like:</label>\n    <input type=\"text\" [(ngModel)]=\"childSelectedAnimal.like\">\n    <br>\n    <label>Enter Animal Dislike:</label>\n    <input type=\"text\" [(ngModel)]=\"childSelectedAnimal.dislike\">\n    <br>\n    <button (click)=\"doneButtonClicked()\">Done</button>\n  </div>\n  <hr>\n  "
     })
 ], EditAnimalComponent);
 exports.EditAnimalComponent = EditAnimalComponent;

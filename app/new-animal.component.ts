@@ -4,6 +4,7 @@ import { Animal } from './animal-model';
 @Component({
   selector: 'new-animal',
   template: `
+    <div class="well">
     <h1>New Animal</h1>
     <div>
       <label>Enter Animal Species:</label>
@@ -42,6 +43,7 @@ import { Animal } from './animal-model';
       <input #newDislike>
     </div>
     <button (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLike.value, newDislike.value); newSpecies.value=''; newName.value=''; newAge.value=''; newDiet.value=''; newLocation.value=''; newCaretakers.value=''; newSex.value=''; newLike.value=''; newDislike.value='';">Add</button>
+    </div>
   `
 })
 

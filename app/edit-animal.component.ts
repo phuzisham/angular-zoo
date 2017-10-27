@@ -5,7 +5,7 @@ import { Animal } from './animal-model';
 @Component({
   selector: 'edit-animal',
   template: `
-  <div *ngIf="childSelectedAnimal">
+  <div *ngIf="childSelectedAnimal" class="well">
     <h3>{{childSelectedAnimal.name}}</h3>
     <h3>Edit Animal</h3>
     <label>Enter Animal Name:</label>
@@ -22,6 +22,7 @@ import { Animal } from './animal-model';
     <br>
     <button (click)="doneButtonClicked()">Done</button>
   </div>
+  <hr>
   `
 })
 
