@@ -11,17 +11,13 @@ import { Animal } from './animal-model';
     <br>
     <input type="text" [(ngModel)]="childSelectedAnimal.name">
     <br>
-    <label>Species:</label>
+    <label>Age:</label>
     <br>
-    <input type="text" [(ngModel)]="childSelectedAnimal.species">
+    <input type="text" [(ngModel)]="childSelectedAnimal.age">
     <br>
-    <label>Like:</label>
+    <label>Caretakers:</label>
     <br>
-    <input type="text" [(ngModel)]="childSelectedAnimal.like">
-    <br>
-    <label>Dislike:</label>
-    <br>
-    <input type="text" [(ngModel)]="childSelectedAnimal.dislike">
+    <input type="text" [(ngModel)]="childSelectedAnimal.caretakers">
     <br><br>
     <button class="btn btn-warning" (click)="doneButtonClicked()">Save Changes</button>
   </div>
