@@ -8,9 +8,9 @@ import { Animal } from './animal-model';
       <option value="allAnimals">All Animals</option>
     </select>
   <ol>
-    <li *ngFor="let currentAnimal of childAnimalList"><span>{{currentAnimal.species}}</span>
+    <li *ngFor="let currentAnimal of childAnimalList"><span>{{currentAnimal.name}}</span>
       <ul>
-        <li>Name: {{currentAnimal.name}}</li>
+        <li>Species: {{currentAnimal.species}}</li>
         <li>Age: {{currentAnimal.age}}</li>
         <li>Likes: {{currentAnimal.like}}</li>
         <li>Dislikes: {{currentAnimal.dislike}}</li>

@@ -34,7 +34,7 @@ __decorate([
 AnimalListComponent = __decorate([
     core_1.Component({
         selector: 'animal-list',
-        template: "\n  <select (change)=\"onChange($event.target.value)\">\n      <option value=\"allAnimals\">All Animals</option>\n    </select>\n  <ol>\n    <li *ngFor=\"let currentAnimal of childAnimalList\"><span>{{currentAnimal.species}}</span>\n      <ul>\n        <li>Name: {{currentAnimal.name}}</li>\n        <li>Age: {{currentAnimal.age}}</li>\n        <li>Likes: {{currentAnimal.like}}</li>\n        <li>Dislikes: {{currentAnimal.dislike}}</li>\n        <button class=\"btn btn-primary\" (click)=\"editButtonHasBeenClicked(currentAnimal)\">Edit!</button><br>\n      </ul>\n    </li>\n  </ol>\n  "
+        template: "\n  <select (change)=\"onChange($event.target.value)\">\n      <option value=\"allAnimals\">All Animals</option>\n    </select>\n  <ol>\n    <li *ngFor=\"let currentAnimal of childAnimalList\"><span>{{currentAnimal.name}}</span>\n      <ul>\n        <li>Species: {{currentAnimal.species}}</li>\n        <li>Age: {{currentAnimal.age}}</li>\n        <li>Likes: {{currentAnimal.like}}</li>\n        <li>Dislikes: {{currentAnimal.dislike}}</li>\n        <button class=\"btn btn-primary\" (click)=\"editButtonHasBeenClicked(currentAnimal)\">Edit!</button><br>\n      </ul>\n    </li>\n  </ol>\n  "
     })
 ], AnimalListComponent);
 exports.AnimalListComponent = AnimalListComponent;

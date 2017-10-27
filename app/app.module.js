@@ -12,7 +12,7 @@ var app_component_1 = require("./app.component");
 var forms_1 = require("@angular/forms");
 var animal_list_component_1 = require("./animal-list.component");
 var edit_animal_component_1 = require("./edit-animal.component");
-// import { NewAnimalComponent } from './new-animal.component';
+var new_animal_component_1 = require("./new-animal.component");
 // import { EmptyPipe } from './empty.pipe';
 var AppModule = (function () {
     function AppModule() {
@@ -22,7 +22,7 @@ var AppModule = (function () {
 AppModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule, forms_1.FormsModule],
-        declarations: [app_component_1.AppComponent, animal_list_component_1.AnimalListComponent, edit_animal_component_1.EditAnimalComponent],
+        declarations: [app_component_1.AppComponent, animal_list_component_1.AnimalListComponent, edit_animal_component_1.EditAnimalComponent, new_animal_component_1.NewAnimalComponent],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);
