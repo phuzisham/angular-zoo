@@ -6,12 +6,18 @@ import { Animal } from './animal-model';
   template: `
   <select (change)="onChange($event.target.value)">
       <option value="allAnimals">All Animals</option>
+      <option value="youngAnimals">Young Animals</option>
+      <option value="matureAnimals">Mature Animals</option>
     </select>
   <ol>
-    <li *ngFor="let currentAnimal of childAnimalList"><span>{{currentAnimal.name}}</span>
+    <li *ngFor="let currentAnimal of childAnimalList | age:filterByAge"><span>{{currentAnimal.name}}</span>
       <ul>
         <li>Species: {{currentAnimal.species}}</li>
         <li>Age: {{currentAnimal.age}}</li>
+        <li>Diet: {{currentAnimal.diet}}</li>
+        <li>Location: {{currentAnimal.location}}</li>
+        <li>Caretakers: {{currentAnimal.caretakers}}</li>
+        <li>Sex: {{currentAnimal.sex}}</li>
         <li>Likes: {{currentAnimal.like}}</li>
         <li>Dislikes: {{currentAnimal.dislike}}</li>
         <button class="btn btn-primary" (click)="editButtonHasBeenClicked(currentAnimal)">Edit!</button><br>
@@ -24,10 +30,10 @@ import { Animal } from './animal-model';
 export class AnimalListComponent {
   @Input() childAnimalList: Animal[];
   @Output() clickSender = new EventEmitter();
-  filterByEmpty: string = "fullAnimals";
+  filterByAge: string = "allAnimals";
 
   onChange(optionFromMenu) {
-    this.filterByEmpty = optionFromMenu;
+    this.filterByAge = optionFromMenu;
   }
 
   editButtonHasBeenClicked(animalToEdit: Animal) {
