@@ -11,7 +11,8 @@ var animal_model_1 = require("./animal-model");
 var AppComponent = (function () {
     function AppComponent() {
         this.masterAnimalList = [
-            new animal_model_1.Animal('Puma', 'Vincent', 4, 'Omnivore', 'South Zoo', 3, 'Male', 'Eating', 'Veterinarians')
+            new animal_model_1.Animal('Puma', 'Vincent', 4, 'Omnivore', 'South Zoo', 3, 'Male', 'Eating', 'Veterinarians'),
+            new animal_model_1.Animal('Bison', 'Caroline', 2, 'Herbivore', 'North Zoo', 1, 'Female', 'Grass', 'Snakes')
         ];
         this.selectedAnimal = null;
     }
@@ -29,7 +30,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'app-root',
-        template: "\n  <div>\n    <h1>Beast Tracker</h1>\n    <animal-list [childAnimalList]=\"masterAnimalList\" (clickSender)=\"editAnimal($event)\"></animal-list>\n    <edit-animal [childSelectedAnimal]=\"selectedAnimal\" (doneButtonClickedSender)=\"finishedEditing()\"></edit-animal>\n    <new-animal (newAnimalSender)=\"addAnimal($event)\"></new-animal>\n  </div>\n  "
+        template: "\n  <div>\n    <h1>Animal Tracker</h1>\n    <div class=\"row\">\n      <animal-list [childAnimalList]=\"masterAnimalList\" (clickSender)=\"editAnimal($event)\"></animal-list>\n      <new-animal (newAnimalSender)=\"addAnimal($event)\"></new-animal>\n    </div>\n    <edit-animal [childSelectedAnimal]=\"selectedAnimal\" (doneButtonClickedSender)=\"finishedEditing()\"></edit-animal>\n  </div>\n  "
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;

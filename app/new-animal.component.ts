@@ -4,45 +4,57 @@ import { Animal } from './animal-model';
 @Component({
   selector: 'new-animal',
   template: `
-    <div class="well">
-    <h1>New Animal</h1>
-    <div>
-      <label>Enter Animal Species:</label>
-      <input #newSpecies>
-    </div>
-    <div>
-      <label>Enter Animal Name:</label>
-      <input #newName>
-    </div>
-    <div>
-      <label>Enter Age:</label>
-      <input #newAge>
-    </div>
-    <div>
-      <label>Enter Diet:</label>
-      <input #newDiet>
-    </div>
-    <div>
-      <label>Enter Location:</label>
-      <input #newLocation>
-    </div>
-    <div>
-      <label>Enter Amount Of Caretakers:</label>
-      <input #newCaretakers>
-    </div>
-    <div>
-      <label>Enter Sex:</label>
-      <input #newSex>
-    </div>
-    <div>
-      <label>Enter Animal Like:</label>
-      <input #newLike>
-    </div>
-    <div>
-      <label>Enter Animal Dislike:</label>
-      <input #newDislike>
-    </div>
-    <button (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLike.value, newDislike.value); newSpecies.value=''; newName.value=''; newAge.value=''; newDiet.value=''; newLocation.value=''; newCaretakers.value=''; newSex.value=''; newLike.value=''; newDislike.value='';">Add</button>
+    <div class="col-sm-6">
+      <div class="well">
+        <h2>New Animal</h2>
+        <div>
+          <label>Species:</label>
+          <br>
+          <input #newSpecies>
+        </div>
+        <div>
+          <label>Name:</label>
+          <br>
+          <input #newName>
+        </div>
+        <div>
+          <label>Age:</label>
+          <br>
+          <input #newAge>
+        </div>
+        <div>
+          <label>Diet:</label>
+          <br>
+          <input #newDiet>
+        </div>
+        <div>
+          <label>Location:</label>
+          <br>
+          <input #newLocation>
+        </div>
+        <div>
+          <label>Caretakers:</label>
+          <br>
+          <input #newCaretakers>
+        </div>
+        <div>
+          <label>Sex:</label>
+          <br>
+          <input #newSex>
+        </div>
+        <div>
+          <label>Like:</label>
+          <br>
+          <input #newLike>
+        </div>
+        <div>
+          <label>Dislike:</label>
+          <br>
+          <input #newDislike>
+        </div>
+        <br>
+        <button class="btn btn-success" (click)="submitForm(newSpecies.value, newName.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLike.value, newDislike.value); newSpecies.value=''; newName.value=''; newAge.value=''; newDiet.value=''; newLocation.value=''; newCaretakers.value=''; newSex.value=''; newLike.value=''; newDislike.value='';">Add</button>
+      </div>
     </div>
   `
 })

@@ -6,23 +6,25 @@ import { Animal } from './animal-model';
   selector: 'edit-animal',
   template: `
   <div *ngIf="childSelectedAnimal" class="well">
-    <h3>{{childSelectedAnimal.name}}</h3>
-    <h3>Edit Animal</h3>
-    <label>Enter Animal Name:</label>
+    <h2>Edit: {{childSelectedAnimal.name}}</h2>
+    <label>Name:</label>
+    <br>
     <input type="text" [(ngModel)]="childSelectedAnimal.name">
     <br>
-    <label>Enter Animal Species:</label>
+    <label>Species:</label>
+    <br>
     <input type="text" [(ngModel)]="childSelectedAnimal.species">
     <br>
-    <label>Enter Animal Like:</label>
+    <label>Like:</label>
+    <br>
     <input type="text" [(ngModel)]="childSelectedAnimal.like">
     <br>
-    <label>Enter Animal Dislike:</label>
-    <input type="text" [(ngModel)]="childSelectedAnimal.dislike">
+    <label>Dislike:</label>
     <br>
-    <button (click)="doneButtonClicked()">Done</button>
+    <input type="text" [(ngModel)]="childSelectedAnimal.dislike">
+    <br><br>
+    <button class="btn btn-warning" (click)="doneButtonClicked()">Save Changes</button>
   </div>
-  <hr>
   `
 })
 
